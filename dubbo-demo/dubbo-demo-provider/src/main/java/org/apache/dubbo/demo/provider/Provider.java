@@ -26,7 +26,6 @@ public class Provider {
      * before running your application.
      */
     public static void main(String[] args) throws Exception {
-        System.out.println("dubbo");
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"META-INF/spring/dubbo-demo-provider.xml"});
         context.start();
         System.in.read(); // press any key to exit
